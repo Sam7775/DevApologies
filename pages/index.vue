@@ -21,10 +21,10 @@ function addExcuse(newExcuse) {
 <template>
   <Header />
   <div class="flex flex-col justify-center items-center h-screen">
-    <h1 class="text-3xl pb-10">Les excuses de dev</h1>
+    <h1 class="text-3xl pb-10 font-mono hover:text-orange-500">LES EXCUSES DE DEV</h1>
     <p class="text-xl pb-10">{{ phrase }}</p>
     <GeneratePhraseButton  @new-phrase="setPhrase" />
-    <button class="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded " @click="showModal = true">
+    <button class="mt-5 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded " @click="showModal = true">
       Ajouter une excuse
     </button>
     <AddExcuseModal v-if="showModal" @close="showModal = false" @new-excuse="addExcuse" />

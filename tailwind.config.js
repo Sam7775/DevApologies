@@ -19,7 +19,19 @@ module.exports = {
       'mono': ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', '"Liberation Mono"', '"Courier New"', 'monospace'],
       'display': ['Oswald',],
       'body': ['"Open Sans"'],
-    }
+    },
+    keyframes: {
+      scroll: {
+        '0%, 100%': { transform: 'translateX(-50%)' },
+        '50%': { transform: 'translateX(1%)' },
+      },
+    },
+    animation: {
+      scroll: 'scroll 5s ease-in-out infinite',
+    },
+
   },
+  
   plugins: [],
+
 }

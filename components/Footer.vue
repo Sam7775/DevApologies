@@ -2,6 +2,7 @@
 
 <template>
     <footer class="bg-gray-900 py-12">
+      <p class="text-center text-white pb-4">Les liens ne fonctionnent pas, c'est juste pour le style.</p>
       <div class="container mx-auto px-6 md:px-12">
         <div class="flex flex-wrap justify-between">
           <div class="w-full md:w-1/3 mb-6 md:mb-0">
@@ -12,7 +13,6 @@
             <ul class="text-white">
               <li class="mb-2">Web Genius</li>
               <ul class="ml-4">
-                <li class="mb-2">Formation Tremplin</li>
               </ul>
               <li class="mb-2">Développeur Web & Web Mobile</li>
             </ul>
