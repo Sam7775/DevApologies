@@ -128,3 +128,26 @@ VALUES
 (701,"Inexcusable","Meh"),
 ................
 
+Je n'ai pas réussi a GET les données a partir du code http.
+a cause de cette erreur ma page Global de Erreur404 ne fonctionne pas 
+Mais pour la faire il suffit de la placer a la racine du projet avec app.vue 
+
+
+
+
+<script setup lang="ts">
+import type { NuxtError } from '#app'
+
+const props = defineProps({
+  error: Object as () => NuxtError
+})
+
+const handleError = () => clearError({ redirect: '/' })
+</script>
+
+<template>
+  <div>
+    <h2>{{ error.statusCode }}</h2>
+    <button @click="handleError">Clear errors</button>
+  </div>
+</template>
