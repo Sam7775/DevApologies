@@ -4,9 +4,9 @@ USE DevApologies;
 
 CREATE TABLE `Apologies` (
     http_code SMALLINT AUTO_INCREMENT UNIQUE, 
-    tag VARCHAR(55), -- specify a length for VARCHAR
-    message_apology VARCHAR(255), -- specify a length for VARCHAR
-    PRIMARY KEY (http_code) -- setting http_code as the primary key
+    tag VARCHAR(55), 
+    message_apology VARCHAR(255), 
+    PRIMARY KEY (http_code) 
 );
 
 ALTER TABLE `Apologies` AUTO_INCREMENT = 700;
